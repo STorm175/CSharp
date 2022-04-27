@@ -1,0 +1,14 @@
+# ~/.gitconfig
+ 
+[user]
+email = ngoducnd52961@gmail.com
+name = Storm17
+ 
+[github]
+user = “Storm17”
+ 
+[core]
+sshCommand = “ssh -i ~/.ssh/STorm17”
+ 
+[core]
+excludesfile = ~/.gitignore      # valid everywhere
