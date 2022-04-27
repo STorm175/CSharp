@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using static CreateProductCommand;
 
 namespace WebApiCQRS
 {
@@ -30,8 +31,10 @@ namespace WebApiCQRS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            services.AddScoped<IApplicationContext, ApplicationContext>();
+
 
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(

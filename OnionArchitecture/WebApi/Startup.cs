@@ -23,6 +23,8 @@ namespace WebApi
         {
             services.AddControllers();
 
+            services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+
             #region Swagger
             services.AddSwaggerGen(c =>
             {
@@ -36,10 +38,22 @@ namespace WebApi
             });
             #endregion
 
+            #region API Versioning
+            // Add API Versioning to the Project
+            services.AddApiVersioning(config =>
+            {
+                // Specify the default API Version as 1.0
+                config.DefaultApiVersion = new ApiVersion(1, 0);
+                // If the client hasn't specified the API version in the request, use the default API version number 
+                config.AssumeDefaultVersionWhenUnspecified = true;
+                // Advertise the API versions supported for the particular endpoint
+                config.ReportApiVersions = true;
+            });
+            #endregion
+
             services.AddApplication();
 
             services.AddPersistence(Configuration);
-            services.AddScoped<DbContext, ApplicationDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
