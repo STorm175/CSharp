@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiCQRS", "WebApiCQRS\WebApiCQRS.csproj", "{B1C099CB-C83F-4E9B-8B52-8D938DE3113E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C099CB-C83F-4E9B-8B52-8D938DE3113E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C099CB-C83F-4E9B-8B52-8D938DE3113E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C099CB-C83F-4E9B-8B52-8D938DE3113E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C099CB-C83F-4E9B-8B52-8D938DE3113E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EB7955C-4839-4420-8B1B-9081DE33A755}
+	EndGlobalSection
+EndGlobal

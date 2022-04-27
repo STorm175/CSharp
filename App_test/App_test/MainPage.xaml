@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="App_test.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App_test"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="60,0" Click="Home_Click">
+                Home page
+            </Button>
+            <Button Margin="60,0" Click="NPage_Click">
+                Next page
+            </Button>
+            <Button Margin="60,0" Click="Reload_Click">
+                Reload
+            </Button>
+            <Button Margin="60,0" Click="Back_Click">
+                Back
+            </Button>
+            <Button Margin="60,0" Click="Clearcache_Click">
+                Clear cache
+            </Button>
+            <Button Margin="60,0" Click="RqPermission_Click">
+                Request Permission
+            </Button>
+        </StackPanel>
+
+        <!--<WebView x:Name="webView1" Height="900" Source="ms-appx-web:///view.html" ScriptNotify="WebViewWithJSInjection_ScriptNotify" NavigationCompleted="WebViewWithJSInjection_NavigationCompleted"/>-->
+
+        <WebView x:Name="webView1" Height="900" Source="https://teams.microsoft.com/go#" NavigationCompleted="WebViewWithJSInjection_NavigationCompleted"/>
+        
+        <!--<WebView x:Name="webView1" Height="900" Source="https://chat.google.com" NavigationCompleted="WebViewWithJSInjection_NavigationCompleted"/>-->
+        
+    </StackPanel>
+</Page>
